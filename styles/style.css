@@ -154,6 +154,10 @@ body{
     .conteudo__principal{
         width: auto;
     }
+
+    .produto{
+        width: auto;
+    }
 }
 
 /* PRODUTOS */
