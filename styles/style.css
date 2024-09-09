@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Great+Vibes&family=Squada+One&display=swap');
+
+:root{
+    --cor-de-fundo: #FF407D; 
+    --cor-do-texto: #f6f6f6;  
+    --cor-do-rodape: #50c4ed;
+    --cor-destaque: #50C4ED;
+
+    --fonte-titulo: "Concert One", sans-serif;
+    --fonte-texto: "Squada One", sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    box-sizing: border-box;
+    background-color: var(--cor-de-fundo);
+    color: var(--cor-do-texto);
+}
+/* CABEÇALHO */
+
+.cabecalho{
+    padding: 2% 0% 0% 14%;
+}
+
+.cabecalho__menu{
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalho__menu__link{
+    font-family: var(--fonte-titulo);
+    font-size: 1.5rem;
+    font-weight: 200;
+    color: var(--cor-destaque);
+    text-decoration: none;
+}
+
+/* CONTEÚDO */
+.titulo-destaque{
+    color: var(--cor-destaque);
+    font-weight: 200;
+}
+
+.tamanho-imagem{
+    max-width:400px ;
+    max-height: 400px;
+    width: 50%;
+    height: 50%;
+    
+}
+.conteudo{
+    padding: 5% 14%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--cor-do-texto);
+    gap: 82px;
+}
+
+.conteudo__principal{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.conteudo__principal__titulo{
+    font-size: 2.25rem;
+    font-family: var(--fonte-titulo);
+    font-weight: 400;
+    font-style: normal;
+}
+
+.conteudo__principal__texto{
+    font-size: 1.38rem;
+    font-family: var(--fonte-texto);
+    font-weight: 200;
+    font-style: normal;
+}
+
+.conteudo__link{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.conteudo__link__titulo{
+    font-size: 26px;
+    font-family: var(--fonte-titulo);
+    font-weight: 100;
+}
+
+.link__botao{
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    padding: 3% 0;
+    border: 2px solid var(--cor-destaque);
+    border-radius: 10px;
+    font-family: var(--fonte-texto);
+    font-size: 1.38rem;
+    text-align: center;
+    text-decoration: none;
+    width: 50%;
+    color: var(--cor-do-texto);
+    font-weight: 800;
+    
+}
+
+.link__botao:hover{
+    background-color: var(--cor-do-rodape);
+}
+
+.icone-whatsapp{
+    max-width: 30px;
+    max-height: 30px;
+    width: auto;
+    height: auto;
+}
+
+/* RODAPÉ */
+.rodape{
+    padding: 2%;
+    background-color: var(--cor-do-rodape);
+    color: #000000;
+    text-align: center;
+    font-family: var(--fonte-texto);
+    font-size: 0.88rem;
+    font-weight: 100;
+}
+
+@media( max-width: 1050px){
+    .cabecalho{
+        padding: 10%;
+    }
+
+    .cabecalho__menu{
+        justify-content: center;
+    }
+
+
+    .conteudo{
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .conteudo__principal{
+        width: auto;
+    }
+
+
+
+}
+
+/* PRODUTOS */
+
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.produto__itens{
+    border: 2px  solid var(--cor-destaque);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 30%;
+    box-sizing: border-box;
+    margin: 10px 0;
+    gap: 20px;
+
+}
+
+
+.produto__imagem{
+    max-width: 300px;
+    max-height: 350px;
+    width: 60%;
+    height: 60%;
+}
+
+.produto__texto{
+    text-decoration: none;
+    font-family: var(--fonte-texto);
+    font-size: 1.38rem;
+    text-align: center;
+    color: var(--cor-do-texto);
+    font-weight: 200;
+}
+
+.produto__texto__titulo{
+    font-size: 1.75rem;
+    font-family: var(--fonte-titulo);
+    font-weight: 300;
+    font-style: normal;
+
+}
+
+@media(max-width: 800px){
+    .produto__itens{
+        width: 45%;
+        margin: 10px 200px;
+        align-items: center;
+
+    }
+}
+
+@media(max-width: 600px){
+    .produto__itens{
+        width: 80%;
+        margin: 10px 50px;
+    }
+}
